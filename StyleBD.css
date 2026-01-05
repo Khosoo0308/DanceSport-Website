@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    font-family: 'Noto Sans Mongolian', sans-serif;
+    background: linear-gradient(90deg, #f5e1b3 0%, #cca649 100%);
+    color: #1a1a1a;
+}
+
+header {
+    background: transparent;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logos img {
+    height: 60px;
+    object-fit: contain;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+    font-weight: 600;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 18px;
+    flex-wrap: nowrap;
+    background-color: rgba(255, 215, 150, 0.9);
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+
+}
+
+nav a {
+    color: black;
+    text-decoration:none;
+    cursor: pointer;
+}
+
+nav a:hover {
+    color: #7a4f00;
+    text-decoration: underline;
+}
+
+.hero {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px black;
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 750px;
+    left: 37%;
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+    width: 90%;
+    max-width: 900px;
+}
+.TD{
+    text-align: center;
+    font-size: 160%;
+    font-weight: 700;
+    text-shadow: #1a1a1a;
+}
+image-container{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.top-section {
+    background-color: #f7e0a8; 
+    padding: 30px 20px;
+}
+
+.bottom-section {
+    background: linear-gradient(to bottom, #f7e0a8 0%, #d89e24 100%); 
+    padding: 30px 20px;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    gap: 20px;
+    padding: 20px 0;
+}
+.image-wrapper {
+    width: 45%; 
+    max-width: 400px; 
+    height: auto;
+    border-radius: 10px; 
+    padding: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 100px;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .hero-text {
+        font-size: 1.8rem;
+        bottom: 20px;
+    }
+    nav {
+        gap: 15px;
+        font-size: 14px;
+    }
+    .logos img {
+        height: 40px;
+    }
+}

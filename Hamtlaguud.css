@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #4d007a;
+    color: white;
+}
+
+.header-image {
+    height: 550px;
+    background: url(wdsf-logo1.png) center/cover no-repeat;
+    border-bottom-left-radius: 350px;
+
+}
+
+/* TITLE */
+.section-title {
+    font-size: 28px;
+    margin: 20px;
+    font-weight: bold;
+}
+
+.team-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #7a009e;
+    margin: 30px;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.team-text {
+    width: 100%;
+    font-size: 22px;
+    line-height: 2.4;
+}
+
+.team-text strong {
+    font-size: 30px;
+    color:#35004e
+}
+
+/* TEAM IMAGE */
+.team-img {
+    width: 45%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* BUTTON */
+.button-area {
+    text-align: center;
+    padding: 20px;
+}
+
+.back-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #35004e;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.back-btn:hover {
+    opacity: 0.8;
+}

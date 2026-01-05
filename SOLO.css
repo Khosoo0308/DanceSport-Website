@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: #f2f2f2;
+}
+
+
+.header img {
+    width: 500px;
+    margin-top: 20px;
+}
+
+
+.content {
+    width: 100%;
+    min-height: calc(100vh - 140px);
+    background: linear-gradient(#ffffff, #9fd0ef);
+    padding: 60px 5vw;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.info p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: left;
+}
+
+.circle-img {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+}
+
+.circle-img.left {
+    background-image: url("solo.webp");
+}
+
+.circle-img.right {
+    background-image: url("solo2.webp");
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 баганаар харуулна */
+    margin: 40px auto;
+    justify-content: center; /* Контейнер доторх зүйлсийг голлуулна */
+    align-items: center;
+    gap: 15px; /* Зургууд хоорондын зай */
+    margin: 20px auto; /* Дээд, доод талдаа зай авна */
+    max-width: 900px; /* Галерейн өргөн */
+    padding: 0 20px;
+}
+
+.gallery-item img {
+    width: 380px;
+    height: 450px; /* Зургийн өндөр (өөртөө тааруулж өөрчлөөрэй) */
+    object-fit: cover; 
+    border-radius: 50%; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    transition: transform 0.3s ease;
+}
+
+/* Хэрэглэгч хулганаа дээгүүр нь гүйлгэхэд томрох эффект */
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .image-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.back-button {
+
+    padding: 12px 36px;
+    font-size: 16px;
+    font-weight: 700; 
+    text-align: center;
+    
+    border: none;
+    border-radius: 50px;
+    
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(110, 142, 251, 0.4); 
+    
+    transition: all 0.3s ease;
+    outline: none; 
+}
+
+.back-button:hover {
+    transform: translateY(-3px); 
+    box-shadow: 0 6px 20px rgba(110, 142, 251, 0.6); 
+    filter: brightness(1.1); 
+}
+
+.back-button:active {
+    transform: translateY(-1px); 
+}
+
+
+
+@media (max-width: 1024px) {
+    .info {
+        grid-template-columns: 1fr;
+    }
+
+    .info p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .circle-img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}
